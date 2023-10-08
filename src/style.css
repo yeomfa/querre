@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap');/* BODY */
+
+:root {
+  /* Colors */
+  --primaryColor: #ffffff;
+}
+
+/* ALL */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Pixelify Sans', sans-serif;
+  color: white;
+}
+
+/* BODY */
+body {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #101010, #505050);
+}
+
+/* CONTAINER APP */
+.container-input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* HEADER */
+.title {
+  margin: 13rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.title img {
+  height: 60px;
+}
+.title span {
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.querre-icon {
+  cursor: pointer;
+}
+
+/* APP */
+.app {
+  position: relative;
+  width: max-content;
+}
+
+.app input {
+  height: 50px;
+  width: 30em;
+  border-radius: 10px;
+  padding: 0 15px;
+  font-size: 15px;
+  border: 2px solid var(--primaryColor);
+  background-color: #151515;
+}
+.app input:focus {
+  outline: 5px solid #5e5e5e;
+}
+.app button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 7px;
+  background-color: var(--primaryColor);
+  height: 40px;
+  border: none;
+  width: 7em;
+  font-size: 15px;
+  border-radius: 7px;
+  transform: translate(0%, -50%);
+  color: black;
+}
+.app button:hover {
+  opacity: .9;
+}
+
+/* HIDDEN */
+.hidden {
+  display: none;
+}
+
+/* HEADER */
+.header-container {
+  display: flex;
+  align-items: center;
+  padding: 0 4rem;
+  height: 8rem;
+}
+.header-container div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: max-content;
+}
+.header-container div img {
+  height: 40px;
+}
+.header-container div span {
+  font-size: 25px;
+  padding-bottom: 4px;
+}
+
+/* QR */
+.qr {
+  display: flex;
+  height: 380px;
+  justify-content: center;
+  align-items: center;
+}
+.shape {
+  height: 280px;
+  width: 280px;
+  background-color: #5e5e5e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+#qrcode {
+  background-color: white;
+  height: 220px;
+  width: 220px;
+  border-radius: 20px;
+}
+
+/* BTN */
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.btn {
+  background-color: #151515;
+  height: 50px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  gap: 10px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: .9;
+}
+.btn img {
+  height: 20px;
+}

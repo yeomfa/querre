@@ -1,0 +1,16 @@
+{
+  "name": "querre",
+  "version": "1.0.0",
+  "description": "Application to covert url's and text to qr codes",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build --dist-dir ./docs"
+  },
+  "keywords": ["qrcode", "qrcodejs", "javascript"],
+  "author": "yeomfa <yeomfa@gmail.com> (https://yeomfa.me)",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  }
+}

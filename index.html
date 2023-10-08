@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Querre</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="src/style.css" rel="stylesheet">
+    <script defer type="module" src="src/controller.js"></script>
+  </head>
+  <body>
+    <div class="root">
+      <!-- MAIN -->
+      <section class="container-input section-form">
+        <div class="title">
+          <img src="public/yeom-icon.png" alt="yeom icon">
+          <span>Querre</span>
+        </div>
+
+        <form class="app form-url">
+          <input class="input-url" type="text" name="url" value="" placeholder="Enter an url"> 
+          <button class="btn-submit" type="submit">QR code</button>
+        </form>
+      </section>
+
+      <!-- QR RESULT -->
+      <section class="container-qr section-qr hidden">
+        <header class="header-container">
+          <div class="querre-icon">
+            <img src="public/yeom-icon.png" alt="yeom icon">
+            <span>Querre</span>
+          </div>
+        </header>
+
+        <div class="qr">
+          <div class="shape">
+            <div class="qrcode"></div>
+          </div>
+        </div>
+
+        <div class="options">
+          <button class="btn btn-download">
+            Download
+            <img class="btn-icon" src="src/icons/download.svg" alt="download icon">
+          </button> 
+          <button class="btn btn-share">
+            Share
+            <img class="btn-icon" src="src/icons/share.svg" alt="download icon">
+          </button> 
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
